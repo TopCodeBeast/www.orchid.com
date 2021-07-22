@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "orc_config";
 $breakpoint: 1100px;
 $breakpoint2: 1450px;
@@ -12,7 +13,7 @@ $breakpoint2: 1450px;
 	@media (min-width: $breakpoint) {
 		.card-grid {
 			display: grid;
-			grid: auto-flow dense / 250px 1fr;
+			grid: auto-flow (dense / 250px) 1fr;
 		}
 	}
 
@@ -20,7 +21,7 @@ $breakpoint2: 1450px;
 		@media (min-width: $breakpoint) {
 			.card-grid {
 				display: grid;
-				grid: auto-flow dense / 500px 1fr;
+				grid: auto-flow (dense / 500px) 1fr;
 			}
 		}
 	}

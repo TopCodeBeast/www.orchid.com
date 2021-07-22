@@ -1,4 +1,5 @@
-import "zone.js/dist/zone-node";
+import { AppServerModule } from './src/app/app.server.module';
+import "zone.js/node";
 import "reflect-metadata";
 
 import { enableProdMode } from "@angular/core";

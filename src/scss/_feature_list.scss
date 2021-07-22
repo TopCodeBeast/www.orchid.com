@@ -1,3 +1,4 @@
+@use "sass:math";
 // Expected structure for v-feature-list:
 
 //  <ul matching parent-sel class="phantom-list">
@@ -83,7 +84,7 @@
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    margin: ($feature-sep / -2.0);
+    margin: math.div($feature-sep, -2.0);
 
     @include mobile {
       flex-flow: column nowrap;
@@ -91,7 +92,7 @@
 
     > li {
       flex: 1 1 10rem;
-      margin: ($feature-sep / 2.0);
+      margin: math.div($feature-sep, 2.0);
     }
   }
 

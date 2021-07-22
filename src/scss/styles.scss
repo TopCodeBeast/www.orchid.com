@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "media_queries";
 @import "misc_config";
 @import "orc_config";
@@ -571,7 +572,6 @@ button:not(.phantom-btn) {
 }
 
 input {
-
   &[type="email"],
   &[type="tel"],
   &[type="text"] {
@@ -585,7 +585,7 @@ textarea {
   @extend .input-type-text;
 
   min-height: $min-height;
-  border-radius: ($min-height / 2);
+  border-radius: math.div($min-height, 2);
   resize: vertical;
 
   @include mobile {
