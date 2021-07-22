@@ -33,9 +33,9 @@ class Question {
 })
 export class QuizComponent implements OnInit {
 
-    @ViewChild('quizWrapper', { static: false }) domelement: ElementRef;
-    @ViewChild('questionContainer', { static: false }) domelement2: ElementRef;
-    @ViewChild('progressBar', { static: false }) domelement3: ElementRef;
+    @ViewChild('quizWrapper') domelement: ElementRef;
+    @ViewChild('questionContainer') domelement2: ElementRef;
+    @ViewChild('progressBar') domelement3: ElementRef;
 
     question: Question;
     questionIndex: number = -1;

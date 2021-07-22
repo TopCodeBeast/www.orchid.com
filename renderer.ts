@@ -4,7 +4,6 @@ import "reflect-metadata";
 import { enableProdMode } from "@angular/core";
 import { renderModuleFactory } from "@angular/platform-server";
 import { Routes } from "@angular/router";
-import { provideModuleMap } from "@nguniversal/module-map-ngfactory-loader";
 import { spawnSync } from "child_process";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { copySync, emptyDirSync } from "fs-extra";
@@ -61,8 +60,7 @@ const VERSION = getVersion();
 
 const template = readFileSync(TEMPLATE_FILE).toString();
 
-const { AppServerModuleNgFactory,
-  LAZY_MODULE_MAP } = require("./dist/server/main");
+const { AppServerModule } = require("./dist/server/main");
 
 emptyDirSync(OUT_FOLDER);
 
@@ -70,33 +68,28 @@ copySync(IN_FOLDER, OUT_FOLDER, {
   filter(src: string, dest: string): boolean { return src != TEMPLATE_FILE; }
 })
 
-  //create the directory for podcast episodes, so that the build doesn't fail silently
-  if (!existsSync(join(OUT_FOLDER, 'podcast')))
-    mkdirSync(join(OUT_FOLDER, 'podcast'))
+//create the directory for podcast episodes, so that the build doesn't fail silently
+if (!existsSync(join(OUT_FOLDER, 'podcast')))
+  mkdirSync(join(OUT_FOLDER, 'podcast'))
 
-  genRoutes(routes).forEach(url => {
-    const outFile = join(
-      OUT_FOLDER,
-      `${basename(url).length === 0 ? join(url, "index") : url}.html`);
+genRoutes(routes).forEach(url => {
+  const outFile = join(OUT_FOLDER, `${basename(url).length === 0 ? join(url, "index") : url}.html`);
 
-    renderModuleFactory(AppServerModuleNgFactory, {
-      document: template,
-      url: url,
-      extraProviders: [
-        provideModuleMap(LAZY_MODULE_MAP),
-      ]
-    }).then(html => {
-      console.log(`Rendered '${url}' to '${outFile}'`);
-      if (outFile.includes('podcast/')) {
-        const a = outFile.split('/');
-        const b = 'podcast/' + a[a.length - 1].substr(0, a[a.length - 1].indexOf('.html'));
-        mkdirSync(join(OUT_FOLDER, b));
-        writeFileSync(join(OUT_FOLDER, b) + "/index.html", html);
-      } else {
-        writeFileSync(outFile, html)
-      }
-    });
+  renderModuleFactory(AppServerModule, {
+    document: template,
+    url: url,
+  }).then(html => {
+    console.log(`Rendered '${url}' to '${outFile}'`);
+    if (outFile.includes('podcast/')) {
+      const a = outFile.split('/');
+      const b = 'podcast/' + a[a.length - 1].substr(0, a[a.length - 1].indexOf('.html'));
+      mkdirSync(join(OUT_FOLDER, b));
+      writeFileSync(join(OUT_FOLDER, b) + "/index.html", html);
+    } else {
+      writeFileSync(outFile, html)
+    }
   });
+});
 
 
 writeFileSync(VERSION_FILE,
