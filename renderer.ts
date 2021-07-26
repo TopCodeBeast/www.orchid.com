@@ -61,7 +61,11 @@ const VERSION = getVersion();
 
 const template = readFileSync(TEMPLATE_FILE).toString();
 
-const { AppServerModule } = require("./dist/server/main");
+console.log("importing main.js");
+import * as test from "./dist/server/main";
+console.log("Test 1: ", test);
+console.log("Test 2: ", test.AppServerModule);
+console.log("Test 3: ", test.AppServerModule["ɵfac"]);
 
 emptyDirSync(OUT_FOLDER);
 
@@ -76,7 +80,7 @@ if (!existsSync(join(OUT_FOLDER, 'podcast')))
 genRoutes(routes).forEach(url => {
   const outFile = join(OUT_FOLDER, `${basename(url).length === 0 ? join(url, "index") : url}.html`);
 
-  renderModuleFactory(AppServerModule, {
+  renderModuleFactory(test, {
     document: template,
     url: url,
   }).then(html => {

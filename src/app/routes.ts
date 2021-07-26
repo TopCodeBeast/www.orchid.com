@@ -24,64 +24,6 @@ import { PreferredProvidersComponent } from './preferredproviders/preferredprovi
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
 
-import { PodcastComponent } from './podcast/podcast.component';
-import { PodcastEp1Component } from './podcast-ep1/podcast.component';
-import { PodcastEp2Component } from './podcast-ep2/podcast.component';
-import { PodcastEp3Component } from './podcast-ep3/podcast.component';
-import { PodcastEp4Component } from './podcast-ep4/podcast.component';
-import { PodcastEp5Component } from './podcast-ep5/podcast.component';
-import { PodcastEp6Component } from './podcast-ep6/podcast.component';
-import { PodcastEp7Component } from './podcast-ep7/podcast.component';
-import { PodcastEp8Component } from './podcast-ep8/podcast.component';
-import { PodcastEp9Component } from './podcast-ep9/podcast.component';
-import { PodcastEp10Component } from './podcast-ep10/podcast.component';
-import { PodcastEp11Component } from './podcast-ep11/podcast.component';
-import { PodcastEp12Component } from './podcast-ep12/podcast.component';
-import { PodcastEp13Component } from './podcast-ep13/podcast.component';
-import { PodcastEp14Component } from './podcast-ep14/podcast.component';
-import { PodcastEp15Component } from './podcast-ep15/podcast.component';
-import { PodcastEp16Component } from './podcast-ep16/podcast.component';
-import { PodcastEp17Component } from './podcast-ep17/podcast.component';
-import { PodcastEp18Component } from './podcast-ep18/podcast.component';
-import { PodcastEp19Component } from './podcast-ep19/podcast.component';
-import { PodcastEp20Component } from './podcast-ep20/podcast.component';
-import { PodcastEp21Component } from './podcast-ep21/podcast.component';
-import { PodcastEp22Component } from './podcast-ep22/podcast.component';
-import { PodcastEp23Component } from './podcast-ep23/podcast.component';
-import { PodcastEp24Component } from './podcast-ep24/podcast.component';
-import { PodcastEp25Component } from './podcast-ep25/podcast.component';
-import { PodcastEp26Component } from './podcast-ep26/podcast.component';
-import { PodcastEp27Component } from './podcast-ep27/podcast.component';
-import { PodcastEp28Component } from './podcast-ep28/podcast.component';
-import { PodcastEp29Component } from './podcast-ep29/podcast.component';
-import { PodcastEp30Component } from './podcast-ep30/podcast.component';
-import { PodcastEp31Component } from './podcast-ep31/podcast.component';
-import { PodcastEp32Component } from './podcast-ep32/podcast.component';
-import { PodcastEp33Component } from './podcast-ep33/podcast.component';
-import { PodcastEp34Component } from './podcast-ep34/podcast.component';
-import { PodcastEp35Component } from './podcast-ep35/podcast.component';
-import { PodcastEp36Component } from './podcast-ep36/podcast.component';
-import { PodcastEp37Component } from './podcast-ep37/podcast.component';
-import { PodcastEp38Component } from './podcast-ep38/podcast.component';
-import { PodcastEp39Component } from './podcast-ep39/podcast.component';
-import { PodcastEp40Component } from './podcast-ep40/podcast.component';
-import { PodcastEp41Component } from './podcast-ep41/podcast.component';
-import { PodcastEp42Component } from './podcast-ep42/podcast.component';
-import { PodcastEp43Component } from './podcast-ep43/podcast.component';
-import { PodcastEp44Component } from './podcast-ep44/podcast.component';
-import { PodcastEp45Component } from './podcast-ep45/podcast.component';
-import { PodcastEp46Component } from './podcast-ep46/podcast.component';
-import { PodcastEp47Component } from './podcast-ep47/podcast.component';
-import { PodcastEp48Component } from './podcast-ep48/podcast.component';
-import { PodcastEp49Component } from './podcast-ep49/podcast.component';
-import { PodcastEp50Component } from './podcast-ep50/podcast.component';
-import { PodcastEp51Component } from './podcast-ep51/podcast.component';
-import { PodcastEp52Component } from './podcast-ep52/podcast.component';
-import { PodcastEp53Component } from './podcast-ep53/podcast.component';
-import { PodcastEp54Component } from './podcast-ep54/podcast.component';
-import { PodcastEp55Component } from './podcast-ep55/podcast.component';
-import { PodcastEp56Component } from './podcast-ep56/podcast.component';
-import { PodcastEp57Component } from './podcast-ep57/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -130,122 +72,238 @@ export const routes: Routes = [
 			{ path: "preferredproviders.html", redirectTo: "preferredproviders" },
 			{ path: "partners", component: PartnersComponent },
 			{ path: "partners.html", redirectTo: "partners" },
-			{ path: "podcast", component: PodcastComponent },
-			{ path: "podcast.html", redirectTo: "podcast" },
-			{ path: "podcast/episode-1-interview-with-rich-starpoli", component: PodcastEp1Component },
-			{ path: "podcast/episode-1-interview-with-rich-starpoli.html", redirectTo: "podcast/episode-1-interview-with-rich-starpoli" },
-			{ path: "podcast/episode-2-vinny-lingham", component: PodcastEp2Component },
-			{ path: "podcast/episode-2-vinny-lingham.html", redirectTo: "podcast/episode-2-vinny-lingham" },
-			{ path: "podcast/episode-3-jyri-engestrom", component: PodcastEp3Component },
-			{ path: "podcast/episode-3-jyri-engestrom.html", redirectTo: "podcast/episode-3-jyri-engestrom" },
-			{ path: "podcast/episode-4-roger-ver", component: PodcastEp4Component },
-			{ path: "podcast/episode-4-roger-ver.html", redirectTo: "podcast/episode-4-roger-ver" },
-			{ path: "podcast/episode-5-jehan-chu", component: PodcastEp5Component },
-			{ path: "podcast/episode-5-jehan-chu.html", redirectTo: "podcast/episode-5-jehan-chu" },
-			{ path: "podcast/episode-6-paul-veradittakit", component: PodcastEp6Component },
-			{ path: "podcast/episode-6-paul-veradittakit.html", redirectTo: "podcast/episode-6-paul-veradittakit" },
-			{ path: "podcast/episode-7-alexander-lloyd", component: PodcastEp7Component },
-			{ path: "podcast/episode-7-alexander-lloyd.html", redirectTo: "podcast/episode-7-alexander-lloyd" },
-			{ path: "podcast/episode-8-cindy-cohn", component: PodcastEp8Component },
-			{ path: "podcast/episode-8-cindy-cohn.html", redirectTo: "podcast/episode-8-cindy-cohn" },
-			{ path: "podcast/episode-9-david-chaum", component: PodcastEp9Component },
-			{ path: "podcast/episode-9-david-chaum.html", redirectTo: "podcast/episode-9-david-chaum" },
-			{ path: "podcast/episode-10-ben-bartlett", component: PodcastEp10Component },
-			{ path: "podcast/episode-10-ben-bartlett.html", redirectTo: "podcast/episode-10-ben-bartlett" },
-			{ path: "podcast/episode-11-richard-muirhead", component: PodcastEp11Component },
-			{ path: "podcast/episode-11-richard-muirhead.html", redirectTo: "podcast/episode-11-richard-muirhead" },
-			{ path: "podcast/episode-12-ken-seiff", component: PodcastEp12Component },
-			{ path: "podcast/episode-12-ken-seiff.html", redirectTo: "podcast/episode-12-ken-seiff" },
-			{ path: "podcast/episode-13-brian-j-fox", component: PodcastEp13Component },
-			{ path: "podcast/episode-13-brian-j-fox.html", redirectTo: "podcast/episode-13-brian-j-fox" },
-			{ path: "podcast/episode-14-juan-gilbert", component: PodcastEp14Component },
-			{ path: "podcast/episode-14-juan-gilbert.html", redirectTo: "podcast/episode-14-juan-gilbert" },
-			{ path: "podcast/episode-15-val-mack", component: PodcastEp15Component },
-			{ path: "podcast/episode-15-val-mack.html", redirectTo: "podcast/episode-15-val-mack" },
-			{ path: "podcast/episode-16-jason-brett", component: PodcastEp16Component },
-			{ path: "podcast/episode-16-jason-brett.html", redirectTo: "podcast/episode-16-jason-brett" },
-			{ path: "podcast/episode-17-dawn-song.html", redirectTo: "podcast/episode-17-dawn-song" },
-			{ path: "podcast/episode-17-dawn-song", component: PodcastEp17Component },
-			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },
-			{ path: "podcast/episode-18-alex-gluchowski", component: PodcastEp18Component },
-			{ path: "podcast/episode-19-david-pan.html", redirectTo: "podcast/episode-19-david-pan" },
-			{ path: "podcast/episode-19-david-pan", component: PodcastEp19Component },
-			{ path: "podcast/episode-20-neeraj-khandelwal.html", redirectTo: "podcast/episode-20-neeraj-khandelwal" },
-			{ path: "podcast/episode-20-neeraj-khandelwal", component: PodcastEp20Component },
-			{ path: "podcast/episode-21-felipe-erazo.html", redirectTo: "podcast/episode-21-felipe-erazo" },
-			{ path: "podcast/episode-21-felipe-erazo", component: PodcastEp21Component },
-			{ path: "podcast/episode-22-adriana-hamacher.html", redirectTo: "podcast/episode-22-adriana-hamacher" },
-			{ path: "podcast/episode-22-adriana-hamacher", component: PodcastEp22Component },
-			{ path: "podcast/episode-23-roneil-rumburg.html", redirectTo: "podcast/episode-23-roneil-rumburg" },
-			{ path: "podcast/episode-23-roneil-rumburg", component: PodcastEp23Component },
-			{ path: "podcast/episode-24-brad-kam.html", redirectTo: "podcast/episode-24-brad-kam" },
-			{ path: "podcast/episode-24-brad-kam", component: PodcastEp24Component },
-			{ path: "podcast/episode-25-roger-huang.html", redirectTo: "podcast/episode-25-roger-huang" },
-			{ path: "podcast/episode-25-roger-huang", component: PodcastEp25Component },
-			{ path: "podcast/episode-26-anne-ahola-ward.html", redirectTo: "podcast/episode-26-anne-ahola-ward" },
-			{ path: "podcast/episode-26-anne-ahola-ward", component: PodcastEp26Component },
-			{ path: "podcast/episode-27-kurt-rohloff.html", redirectTo: "podcast/episode-27-kurt-rohloff" },
-			{ path: "podcast/episode-27-kurt-rohloff", component: PodcastEp27Component },
-			{ path: "podcast/episode-28-andreas-antonopoulos.html", redirectTo: "podcast/episode-28-andreas-antonopoulos" },
-			{ path: "podcast/episode-28-andreas-antonopoulos", component: PodcastEp28Component },
-			{ path: "podcast/episode-29-yaniv-tal.html", redirectTo: "podcast/episode-29-yaniv-tal" },
-			{ path: "podcast/episode-29-yaniv-tal", component: PodcastEp29Component },
-			{ path: "podcast/episode-30-franck-nouyrigat.html", redirectTo: "podcast/episode-30-franck-nouyrigat" },
-			{ path: "podcast/episode-30-franck-nouyrigat", component: PodcastEp30Component },
-			{ path: "podcast/episode-31-jamie-king.html", redirectTo: "podcast/episode-31-jamie-king" },
-			{ path: "podcast/episode-31-jamie-king", component: PodcastEp31Component },
-			{ path: "podcast/episode-32-nathan-wilcox.html", redirectTo: "podcast/episode-32-nathan-wilcox" },
-			{ path: "podcast/episode-32-nathan-wilcox", component: PodcastEp32Component },
-			{ path: "podcast/episode-33-john-redgrave.html", redirectTo: "podcast/episode-33-john-redgrave" },
-			{ path: "podcast/episode-33-john-redgrave", component: PodcastEp33Component },
-			{ path: "podcast/episode-34-joe-toscano.html", redirectTo: "podcast/episode-34-joe-toscano" },
-			{ path: "podcast/episode-34-joe-toscano", component: PodcastEp34Component },
-			{ path: "podcast/episode-35-leigh-honeywell.html", redirectTo: "podcast/episode-35-leigh-honeywell" },
-			{ path: "podcast/episode-35-leigh-honeywell", component: PodcastEp35Component },
-			{ path: "podcast/episode-36-lance-vick.html", redirectTo: "podcast/episode-36-lance-vick" },
-			{ path: "podcast/episode-36-lance-vick", component: PodcastEp36Component },
-			{ path: "podcast/episode-37-david-henklel-wallace.html", redirectTo: "podcast/episode-37-david-henklel-wallace" },
-			{ path: "podcast/episode-37-david-henklel-wallace", component: PodcastEp37Component },
-			{ path: "podcast/episode-38-miko-matsumura.html", redirectTo: "podcast/episode-38-miko-matsumura" },
-			{ path: "podcast/episode-38-miko-matsumura", component: PodcastEp38Component },
-			{ path: "podcast/episode-39-gregory-landua.html", redirectTo: "podcast/episode-39-gregory-landua" },
-			{ path: "podcast/episode-39-gregory-landua", component: PodcastEp39Component },
-			{ path: "podcast/episode-40-marvin-tong.html", redirectTo: "podcast/episode-40-marvin-tong" },
-			{ path: "podcast/episode-40-marvin-tong", component: PodcastEp40Component },
-			{ path: "podcast/episode-41-aibek-esengulov.html", redirectTo: "podcast/episode-41-aibek-esengulov" },
-			{ path: "podcast/episode-41-aibek-esengulov", component: PodcastEp41Component },
-			{ path: "podcast/episode-42-tor-bair.html", redirectTo: "podcast/episode-42-tor-bair" },
-			{ path: "podcast/episode-42-tor-bair", component: PodcastEp42Component },
-			{ path: "podcast/episode-43-emin-gun-sirer.html", redirectTo: "podcast/episode-43-emin-gun-sirer" },
-			{ path: "podcast/episode-43-emin-gun-sirer", component: PodcastEp43Component },
-			{ path: "podcast/episode-44-bill-barhydt.html", redirectTo: "podcast/episode-44-bill-barhydt" },
-			{ path: "podcast/episode-44-bill-barhydt", component: PodcastEp44Component },
-			{ path: "podcast/episode-45-derek-e-silva.html", redirectTo: "podcast/episode-45-derek-e-silva" },
-			{ path: "podcast/episode-45-derek-e-silva", component: PodcastEp45Component },
-			{ path: "podcast/episode-46-edward-snowden.html", redirectTo: "podcast/episode-46-edward-snowden" },
-			{ path: "podcast/episode-46-edward-snowden", component: PodcastEp46Component },
-			{ path: "podcast/episode-47-kara-swisher.html", redirectTo: "podcast/episode-47-kara-swisher" },
-			{ path: "podcast/episode-47-kara-swisher", component: PodcastEp47Component },
-			{ path: "podcast/episode-48-avichal-garg.html", redirectTo: "podcast/episode-48-avichal-garg" },
-			{ path: "podcast/episode-48-avichal-garg", component: PodcastEp48Component },
-			{ path: "podcast/episode-49-dragana-kaurin.html", redirectTo: "podcast/episode-49-dragana-kaurin" },
-			{ path: "podcast/episode-49-dragana-kaurin", component: PodcastEp49Component },
-			{ path: "podcast/episode-50-rebecca-wexler.html", redirectTo: "podcast/episode-50-rebecca-wexler" },
-			{ path: "podcast/episode-50-rebecca-wexler", component: PodcastEp50Component },
-			{ path: "podcast/episode-51-greg-osuri.html", redirectTo: "podcast/episode-51-greg-osuri" },
-			{ path: "podcast/episode-51-greg-osuri", component: PodcastEp51Component },
-			{ path: "podcast/episode-52-gbenga-sesan.html", redirectTo: "podcast/episode-52-gbenga-sesan" },
-			{ path: "podcast/episode-52-gbenga-sesan", component: PodcastEp52Component },
-			{ path: "podcast/episode-53-jason-pielemeier.html", redirectTo: "podcast/episode-53-jason-pielemeier" },
-			{ path: "podcast/episode-53-jason-pielemeier", component: PodcastEp53Component },
-			{ path: "podcast/episode-54-brittany-piovesan.html", redirectTo: "podcast/episode-54-brittany-piovesan" },
-			{ path: "podcast/episode-54-brittany-piovesan", component: PodcastEp54Component },
-			{ path: "podcast/episode-55-john-gleeson.html", redirectTo: "podcast/episode-55-john-gleeson" },
-			{ path: "podcast/episode-55-john-gleeson", component: PodcastEp55Component },
-			{ path: "podcast/episode-56-michael-caster.html", redirectTo: "podcast/episode-56-michael-caster" },
-			{ path: "podcast/episode-56-michael-caster", component: PodcastEp56Component },
-			{ path: "podcast/episode-57-kean-birch.html", redirectTo: "podcast/episode-57-kean-birch" },
-			{ path: "podcast/episode-57-kean-birch", component: PodcastEp57Component },
+			{
+				path: "podcast",
+				loadChildren: () => import("./podcast/podcast.component").then(m => m.PodcastComponent)
+			},
+			{
+				path: "podcast/episode-1-interview-with-rich-starpoli",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-2-vinny-lingham",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-3-jyri-engestrom",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-4-roger-ver",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-5-jehan-chu",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-6-paul-veradittakit",
+				loadChildren: () => import("./podcast-ep6/podcast.component").then(m => m.PodcastEp6Component)
+			},
+			{
+				path: "podcast/episode-7-alexander-lloyd",
+				loadChildren: () => import("./podcast-ep7/podcast.component").then(m => m.PodcastEp7Component)
+			},
+			{
+				path: "podcast/episode-8-cindy-cohn",
+				loadChildren: () => import("./podcast-ep8/podcast.component").then(m => m.PodcastEp8Component)
+			},
+			{
+				path: "podcast/episode-9-david-chaum",
+				loadChildren: () => import("./podcast-ep9/podcast.component").then(m => m.PodcastEp9Component)
+			},
+			{
+				path: "podcast/episode-10-ben-bartlett",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-11-richard-muirhead",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-12-ken-seiff",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-13-brian-j-fox",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-14-juan-gilbert",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-15-val-mack",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-16-jason-brett",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-17-dawn-song",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-18-alex-gluchowski",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-19-david-pan",
+				loadChildren: () => import("./podcast-ep1/podcast.component").then(m => m.PodcastEp1Component)
+			},
+			{
+				path: "podcast/episode-20-neeraj-khandelwal",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-21-felipe-erazo",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-22-adriana-hamacher",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-23-roneil-rumburg",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-24-brad-kam",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-25-roger-huang",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-26-anne-ahola-ward",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-27-kurt-rohloff",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-28-andreas-antonopoulos",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-29-yaniv-tal",
+				loadChildren: () => import("./podcast-ep2/podcast.component").then(m => m.PodcastEp2Component)
+			},
+			{
+				path: "podcast/episode-30-franck-nouyrigat",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-31-jamie-king",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-32-nathan-wilcox",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-33-john-redgrave",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-34-joe-toscano",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-35-leigh-honeywell",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-36-lance-vick",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-37-david-henklel-wallace",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-38-miko-matsumura",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-39-gregory-landua",
+				loadChildren: () => import("./podcast-ep3/podcast.component").then(m => m.PodcastEp3Component)
+			},
+			{
+				path: "podcast/episode-40-marvin-tong",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-41-aibek-esengulov",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-42-tor-bair",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-43-emin-gun-sirer",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-44-bill-barhydt",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-45-derek-e-silva",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-46-edward-snowden",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-47-kara-swisher",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-48-avichal-garg",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-49-dragana-kaurin",
+				loadChildren: () => import("./podcast-ep4/podcast.component").then(m => m.PodcastEp4Component)
+			},
+			{
+				path: "podcast/episode-50-rebecca-wexler",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-51-greg-osuri",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-52-gbenga-sesan",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-53-jason-pielemeier",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-54-brittany-piovesan",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-55-john-gleeson",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-56-michael-caster",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
+			{
+				path: "podcast/episode-57-kean-birch",
+				loadChildren: () => import("./podcast-ep5/podcast.component").then(m => m.PodcastEp5Component)
+			},
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },

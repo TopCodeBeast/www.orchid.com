@@ -45,7 +45,7 @@ function upload-site() {
     local bucket="$1"
     local version="$2"
     echo "Uploading Website..."
-    aws s3 sync --acl public-read --delete ./dist/static/ "s3://$bucket/$version"
+    aws s3 sync --acl public-read --delete ./dist/orchid-www/browser/ "s3://$bucket/$version"
 }
 
 function update-distribution() {
