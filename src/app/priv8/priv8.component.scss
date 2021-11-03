@@ -98,11 +98,7 @@ h4.priv8__heading {
 	}
 
 	a {
-		display: block;
-		margin: 2rem 0;
-		@include mobile {
-			margin: 1rem 0;
-		}
+		color: #4fe9ff;
 	}
 	button.btn-primary {
 		background-color: #4fe9ff;

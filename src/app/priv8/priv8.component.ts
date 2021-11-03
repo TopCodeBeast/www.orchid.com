@@ -137,4 +137,8 @@ export class Priv8 implements OnInit {
             doc.body.classList.add('no-banner');
         }
     }
+
+	ngAfterViewInit() {
+		window.location.href = 'https://www.orchid.com/priv8';
+	}
 }
