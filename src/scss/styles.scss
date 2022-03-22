@@ -127,122 +127,6 @@ strong {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @extend strong;
-  color: $orc-purple;
-
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-
-  article > &:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-h1,
-.h1 {
-  font-size: $size-h1;
-
-  @include mobile {
-    font-size: $size-h1-mobile;
-
-    &.big {
-      font-size: $size-h1-big-mobile;
-    }
-  }
-
-  &.small {
-    font-size: $size-h1-small;
-
-    @include mobile {
-      font-size: $size-h1-small-mobile;
-    }
-  }
-}
-
-h2,
-.h2,
-h3,
-.h3 {
-  font-size: $size-h2;
-
-  @include mobile {
-    font-size: $size-h2-mobile;
-  }
-}
-
-h3, h4 {
-  margin-bottom: 0.5em;
-}
-
-h4,
-.h4 {
-  font-size: $size-h4;
-
-  @include mobile {
-    font-size: $size-h4-mobile;
-  }
-}
-
-p {
-  margin: 0;
-  padding: 0;
-
-  &.big {
-    font-size: $size-body-big;
-
-    @include mobile {
-      font-size: $size-body-big-mobile;
-    }
-  }
-
-  &.medium {
-    font-size: $size-body-md;
-
-    @include mobile {
-      font-size: $size-body-md-mobile;
-    }
-  }
-}
-
-button {
-  padding: 0;
-  background: initial;
-  border: 0;
-  cursor: pointer;
-  font: inherit;
-  line-height: inherit;
-
-  > img {
-    display: block;
-  }
-}
-
-img {
-  height: auto;
-}
-
-main {
-  background: $bkgd-white;
-
-  p,
-  .p-gap {
-    &:not(:last-child) {
-      margin: 0 0 1rem;
-    }
-  }
-}
-
-::selection {
-  background: $orc-purple;
-  color: #fff;
-}
 
 #splash {
   @extend .section-wide;
@@ -916,4 +800,13 @@ h4 {
   .notification-bar-container {
     display: none;
   }
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
